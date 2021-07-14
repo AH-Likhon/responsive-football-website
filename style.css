@@ -89,3 +89,50 @@ header{
     font-size: 16px;
     text-align: justify;
 }
+
+/* Latest Result style  */
+
+.result-container{
+    background-image: url("images/bg.jpg");
+    padding: 50px 85px;
+}
+
+.latest-result-container{
+    width: 1050px;  
+    text-transform: uppercase; 
+    color: #fff; 
+    text-align: center;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.result-box{
+    width: 340px;
+    padding: 20px;
+    background-color: rgba(0,0,0,.2);
+    text-align: center;
+    padding: 20px;
+}
+
+.result{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+.result img{
+    width: 40px;
+    height: 40px;
+}
+.competition{
+    color:  #E02C6D;
+}
+
+.game-result{
+    background-color: #E02C6D;
+    padding: 0px 8px;
+    margin-top: 5px;
+}
