@@ -45,12 +45,25 @@ header{
 .header-img img{
     width: 556px;
     height: 438px;
-    transition: transform 2s ease-in-out;
+    animation: img-animation 3s infinite alternate;
+    transform: skew(20deg);
+    opacity: .7;
 }
+@keyframes img-animation {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+  }
+  
 
-.header-img img:hover{
-    transform: scaleX(1.2) rotate(20deg);
-}
+/* .header-img img:hover{
+    animation: img-animation 3s infinite alternate;
+    transform: skew(20deg);
+    opacity: .7;
+} */
 
 /* Player Blogs Style */
 
@@ -215,17 +228,20 @@ footer{
         justify-content: flex-start;
         width: 100%;
         margin-left: -120px;
-        
     }
 
     .header-title{
         font-size: 46px;
     }
+    
+    
     .header-img img{
         width: 320px;
         height: 250px;
         margin-top: 50px;
-    } 
+    }
+
+   
 
     .blogs, .matches{
         grid-template-columns: repeat(1, 1fr);
