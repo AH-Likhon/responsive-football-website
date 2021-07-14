@@ -51,10 +51,10 @@ header{
 }
 @keyframes img-animation {
     0% {
-      transform: skewX(20deg);
+      transform: skewX(20deg) scale(0.5);
     }
     100% {
-      transform: skewX(-20deg);
+      transform: skewX(-20deg) scale(0.9);
     }
   }
   
