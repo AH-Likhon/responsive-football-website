@@ -9,10 +9,11 @@
 }
 /* header style */
 header{
-    background-color: #2D25A0;
+    background-color: #2D25A0;    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* width: 100%; */
     margin: 0px auto;
     padding: 20px 140px 20px 155px;
     overflow: hidden;
@@ -212,13 +213,19 @@ footer{
     header{
         flex-direction: column;
         justify-content: flex-start;
+        width: 100%;
+        margin-left: -120px;
         
     }
+
+    .header-title{
+        font-size: 46px;
+    }
     .header-img img{
-        width: 400px;
+        width: 320px;
         height: 250px;
         margin-top: 50px;
-    }
+    } 
 
     .blogs, .matches{
         grid-template-columns: repeat(1, 1fr);
